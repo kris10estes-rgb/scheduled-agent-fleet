@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-09-16T06:00:00",
+  "records": [
+    {"id": "board:rollout-04", "kind": "boards", "title": "Rollout blocked", "status": "blocked", "changed": true,
+     "blocking_client": true, "needs_decision": true, "detail": "hardware ETA slipped 3 days. Approve overtime staging?"},
+    {"id": "chat:sla-thread", "kind": "chat", "title": "New deal wants a custom SLA beyond standard tiers", "status": "open", "changed": true,
+     "needs_decision": true, "detail": "Capacity review first"},
+    {"id": "board:migration-b2", "kind": "boards", "title": "Migration batch 2 finished overnight", "status": "done", "changed": true,
+     "blocking_client": true, "detail": "zero errors"},
+    {"id": "doc:newsletter-draft", "kind": "docs", "title": "Weekly newsletter drafted", "status": "review", "changed": true,
+     "detail": "ready for review"},
+    {"id": "board:menu-refresh-40", "kind": "boards", "title": "40-site menu refresh staged", "status": "qa-passed", "changed": true,
+     "detail": "QA passed"},
+    {"id": "chat:escalations", "kind": "chat", "title": "Two escalations closed since yesterday", "status": "closed", "changed": true},
+    {"id": "cal:pricing-update", "kind": "calendar", "title": "Network-wide pricing update", "status": "scheduled", "changed": false,
+     "due": "2026-09-17T17:00:00"},
+    {"id": "doc:sop-naming", "kind": "docs", "title": "Naming SOP", "status": "published", "changed": false},
+    {"id": "board:evergreen-refresh", "kind": "boards", "title": "Evergreen content refresh", "status": "in-progress", "changed": false},
+    {"id": "cal:next-week-review", "kind": "calendar", "title": "Quarterly review prep", "status": "scheduled", "changed": false,
+     "due": "2026-09-22T14:00:00"}
+  ]
+}

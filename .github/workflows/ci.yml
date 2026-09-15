@@ -1,0 +1,31 @@
+# Runs the fleet's tests and the eval harness on every push and pull request to main.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Fleet tests and evals
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest
+      - run: python -m agent_fleet specs specs/
+      - run: python -m agent_fleet eval specs/daily_pulse.md examples/sources_weekday.json
