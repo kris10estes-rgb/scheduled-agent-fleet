@@ -4,6 +4,8 @@ Scheduled AI agents read the tools, apply priority logic, and draft leadership-r
 
 Built by Kristen Estes, a Director of Content Operations with 20 years in creative and content ops and a PMP, as a public proof-of-work for senior AI Product and AI Operations roles. [LinkedIn](https://www.linkedin.com/in/kris10estes)
 
+**For AI enablement teams:** the spec standard is how a team adopts agents safely. Anyone can read an agent's contract, and the two rules are enforced in code instead of left to training.
+
 This is the agent fleet from my systems portfolio, pulled out into code. Sources and outputs are sanitized. The production version reads project boards, a calendar, a docs wiki, and chat over MCP; here they are a JSON file so the whole pipeline runs with no credentials and no tokens.
 
 ## The two rules
